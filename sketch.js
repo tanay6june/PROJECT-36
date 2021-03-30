@@ -1,5 +1,4 @@
-var dog,sadDog,happyDog
-var database;
+var dog,sadDog,happyDog,database;
 var foodS,foodStock;
 var fedTime,lastFed;
 var feed,addFood;
@@ -11,9 +10,7 @@ happyDog=loadImage("Images/happy dog.png");
 }
 
 function setup() {
-
-  database = firebase.database();
-  
+  database=firebase.database();
   createCanvas(1000,400);
 
   foodObj = new Food();
